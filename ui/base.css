@@ -1,0 +1,24 @@
+/* dev:   ./tailwindcss -i ui/base.css -o ui/static/style.css --watch  */
+/* build: ./tailwindcss -i ui/base.css -o ui/static/style.css --minify */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://community.cloudflare.steamstatic.com/public/shared/fonts/MotivaSans-Medium.ttf?v=4.015') format('truetype');
+	font-weight: 500;
+	/* Medium */
+	font-style: normal;
+}
+
+body {
+	min-height: 100vh;
+	font-family: "Motiva Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-weight: 500;
+}
+
+.wrap-balance {
+	text-wrap: balance;
+}
