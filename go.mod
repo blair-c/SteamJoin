@@ -1,4 +1,4 @@
-module steamjo.in
+module steamjoin.com
 
 go 1.20
 
