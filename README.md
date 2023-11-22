@@ -4,7 +4,7 @@ A website to generate shortened + permanent Steam join game lobby links. Built w
 
 Parses Steam API responses and uses [Steam browser protocol](https://developer.valvesoftware.com/wiki/Steam_browser_protocol) to redirect into Steam on success. Utilizes go-chi dynamic routing and JavaScript to unify search and redirect implementation.
 
-![SteamJoin successful redirect](readme/success.png)
+![SteamJoin successful & offline redirect](readme/examples.png)
 
 ## Development
 
