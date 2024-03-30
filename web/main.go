@@ -57,7 +57,7 @@ func main() {
 	errorLog := log.New(os.Stderr, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
 	infoLog := log.New(os.Stdout, "INFO\t", log.Ldate|log.Ltime)
 
-	tmpl, err := template.ParseFiles("./web/ui/tmpl.html")
+	tmpl, err := template.ParseFiles("./ui/tmpl.html")
 	if err != nil {
 		errorLog.Fatal(err)
 	}
@@ -74,7 +74,7 @@ func main() {
 	r.Use(middleware.Recoverer)
 	r.Use(httprate.LimitByIP(100, 1*time.Minute))
 
-	fileServer := http.FileServer(http.Dir("./web/ui/static/"))
+	fileServer := http.FileServer(http.Dir("./ui/static/"))
 	r.Handle("/*", http.StripPrefix("/", fileServer))
 
 	r.Get("/", app.home)

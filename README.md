@@ -12,10 +12,11 @@ Parses Steam API responses and uses [Steam browser protocol](https://developer.v
 
 During development, run
 ```sh
-./tailwindcss -i web/ui/base.css -o web/ui/static/style.css --watch
+cd web
+./tailwindcss -i ui/base.css -o ui/static/style.css --watch
 ```
 
 Compile and minify for production with
 ```sh
-./tailwindcss -i web/ui/base.css -o web/ui/static/style.css --minify
+./tailwindcss -i ui/base.css -o ui/static/style.css --minify
 ```
