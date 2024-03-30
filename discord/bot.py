@@ -32,7 +32,9 @@ class MyBot(commands.Bot):
         print(f'Logged in as {bot.user}\nUser ID: {bot.user.id}')
 
 
-bot = MyBot(intents=discord.Intents.default())
+intents = discord.Intents.default()
+intents.members = True
+bot = MyBot(intents=intents)
 bot.remove_command('help')
 
 @bot.command()
